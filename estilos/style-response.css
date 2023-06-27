@@ -1,0 +1,148 @@
+@charset "UTF-8";
+
+:root{
+    --cor1: #006DEB;
+    --cor2: #0BC9D4;
+    --cor3: #0CF58B;
+    --cor4: #00FFBA;
+    --corDeFundo: #e0dfda;
+  
+    --corFontPadrao:#383535;
+  
+    --fontSimEnergy:'Ruda', sans-serif;
+    --fontSection: 'Quicksand','Arial', sans-serif;
+  }
+
+.esconder{
+    display: none;
+}
+
+@media screen and (max-width: 750px) {
+    /*------HEADER--------*/
+    .logo-div>h1{
+        font-size: 1.5em;
+    }
+    .logo-div>img{
+        width: 70px;
+    }
+    .links-menu{
+        display: none;
+    }
+
+    /*---MENU RETRATIL(DISPOSITIVOS MOVEIS)---------*/
+    #menu{
+    display: none;
+    }
+    #menu-retratil{
+    display: block;
+
+    font-size: 30px;
+    }
+    #menu-open{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 45%;
+    height: 300px;
+    background-color: #f2f2f2;
+    border-bottom-left-radius: 10px;
+    box-shadow: -2px 2px 2px rgba(0, 0, 0, 0.144);
+    }
+    
+    #menu-retratil:hover{
+        cursor: pointer
+    }
+
+    .fechar-menu {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 30px;
+    }
+
+    .links-menu-retratil {
+        margin-top: 70px;
+        list-style: none;
+        margin-left: 30px;
+      }
+    
+      .links-menu-retratil > li{
+         padding: 20px 0px;
+      }
+    
+      .links-menu-retratil > li > a{
+        text-decoration: none;
+        margin-top: 10px;
+        margin-left: -20px;
+        padding: 10px;
+        color: #0e0101;
+        font-weight: bold;
+        transition: 0.5s;
+        font-size: 20px;
+      }
+    
+      .selected-menu {
+        transition: 0.8s;
+        border-radius: 10px;
+        box-shadow: 2px 2px 2px  rgba(0, 0, 0, 0.24);
+      }
+    
+      .selected-menu{
+        width: 218px;
+      }
+    
+
+    /*------BANNER--------*/
+
+    .banner{
+        background-image: url(../img/banners/banner.jpg);
+    } 
+    .banner > h1{
+        font-size: 5vw;
+    }
+    .banner > p{
+        font-size: 3vw;
+    }
+
+    /*------MAIN----------*/
+
+
+    .sections-item{
+        width: 70vw;
+    }
+    .sections-item > h3{
+        font-size: 0.8em;
+    }
+    .sections-item:hover{
+        width: 90vw;
+    }
+
+
+    /*------FOOTER--------*/
+
+    .footer-section > h3{
+        font-size: 1em;
+    }
+    .footer-section > ul > li > a, .footer-section > ul > li{
+        font-size: 0.8em;
+        margin-bottom: 10px;
+    }
+    .footer-logo > img{
+        width: 23vw;
+    }
+
+}
+
+
+
+@media screen and (min-width: 750px) {
+    #menu{
+     display: flex;
+    }
+    #menu-retratil{
+     display: none;
+    }
+    #menu-open{
+      display: none;
+    }
+  }
